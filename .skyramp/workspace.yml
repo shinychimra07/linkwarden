@@ -1,0 +1,23 @@
+# Skyramp Workspace Configuration
+workspace:
+  repoName: letsramp/eval-linkwarden
+  repoUrl: https://github.com/letsramp/eval-linkwarden.git
+metadata:
+  schemaVersion: v1
+  mcpVersion: latest
+  executorVersion: v1.3.11
+  createdAt: "2026-03-09T05:32:07.592Z"
+  updatedAt: "2026-03-09T05:32:07.603Z"
+services:
+  - serviceName: linkwarden
+    language: typescript
+    framework: playwright
+    outputDir: tests
+    api:
+      authType: apiKey
+      authHeader: Cookie
+      baseUrl: http://localhost:3000
+    runtimeDetails:
+      serverStartCommand: docker compose up -d
+      runtime: docker
+      dockerNetwork: eval-linkwarden_default
