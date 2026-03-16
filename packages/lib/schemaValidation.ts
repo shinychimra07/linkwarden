@@ -314,3 +314,29 @@ export const UpdateDashboardLayoutSchema = z.array(
 export type UpdateDashboardLayoutSchemaType = z.infer<
   typeof UpdateDashboardLayoutSchema
 >;
+
+export const PostSavedSearchSchema = z.object({
+  name: z.string().trim().min(1).max(100),
+  description: z.string().trim().max(500).optional(),
+  searchQuery: z.string().trim().max(2048).optional(),
+  collectionId: z.number().optional(),
+  tagIds: z.array(z.number()).optional(),
+  sortBy: z.enum(["createdAt", "name", "url", "updatedAt"]).optional(),
+  sortOrder: z.enum(["asc", "desc"]).optional(),
+});
+
+export type PostSavedSearchSchemaType = z.infer<typeof PostSavedSearchSchema>;
+
+export const UpdateSavedSearchSchema = z.object({
+  name: z.string().trim().min(1).max(100).optional(),
+  description: z.string().trim().max(500).optional(),
+  searchQuery: z.string().trim().max(2048).optional(),
+  collectionId: z.number().nullish(),
+  tagIds: z.array(z.number()).optional(),
+  sortBy: z.enum(["createdAt", "name", "url", "updatedAt"]).optional(),
+  sortOrder: z.enum(["asc", "desc"]).optional(),
+});
+
+export type UpdateSavedSearchSchemaType = z.infer<
+  typeof UpdateSavedSearchSchema
+>;
