@@ -17,7 +17,6 @@ services:
       authType: apiKey
       authHeader: Cookie
       baseUrl: http://localhost:3000
-      authTokenCommand: bash .skyramp/get_auth_token.sh
     runtimeDetails:
       serverStartCommand: docker compose up -d
       runtime: docker
