@@ -151,6 +151,7 @@ export default async function updateLinkById(
         name: data.name || "",
         url: data.url,
         description: data.description || "",
+        notes: data.notes || "",
         icon: data.icon,
         iconWeight: data.iconWeight,
         color: data.color,
