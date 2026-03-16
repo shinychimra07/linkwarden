@@ -1,0 +1,106 @@
+[
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\":\"Tech Resources 1742094000\",\"description\":\"Collection for tech resources\",\"color\":\"#0ea5e9\",\"isPublic\":false}",
+    "ResponseBody": "{\"response\":{\"id\":1,\"name\":\"Tech Resources 1742094000\",\"description\":\"Collection for tech resources\",\"color\":\"#0ea5e9\",\"isPublic\":false,\"ownerId\":1,\"createdAt\":\"2026-03-16T00:00:00.000Z\",\"updatedAt\":\"2026-03-16T00:00:00.000Z\"}}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        ""
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/v1/collections",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-16T05:57:15.083Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\":\"Collection Search 1742094000\",\"description\":\"Search within tech collection\",\"searchQuery\":\"framework\",\"collectionId\":1,\"sortBy\":\"createdAt\",\"sortOrder\":\"desc\"}",
+    "ResponseBody": "{\"response\":{\"id\":2,\"name\":\"Collection Search 1742094000\",\"description\":\"Search within tech collection\",\"searchQuery\":\"framework\",\"collectionId\":1,\"sortBy\":\"createdAt\",\"sortOrder\":\"desc\",\"ownerId\":1,\"createdAt\":\"2026-03-16T00:00:00.000Z\",\"updatedAt\":\"2026-03-16T00:00:00.000Z\",\"collection\":{\"id\":1,\"name\":\"Tech Resources 1742094000\",\"color\":\"#0ea5e9\"},\"tags\":[]}}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        ""
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/v1/saved-searches",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-16T05:57:27.077Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"response\":{\"id\":2,\"name\":\"Collection Search 1742094000\",\"description\":\"Search within tech collection\",\"searchQuery\":\"framework\",\"collectionId\":1,\"sortBy\":\"createdAt\",\"sortOrder\":\"desc\",\"ownerId\":1,\"createdAt\":\"2026-03-16T00:00:00.000Z\",\"updatedAt\":\"2026-03-16T00:00:00.000Z\",\"collection\":{\"id\":1,\"name\":\"Tech Resources 1742094000\",\"color\":\"#0ea5e9\"},\"tags\":[]}}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        ""
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "GET",
+    "Path": "/api/v1/saved-searches/2",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-16T05:57:36.092Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"response\":2}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        ""
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "DELETE",
+    "Path": "/api/v1/saved-searches/2",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-16T05:57:43.176Z",
+    "Scheme": "http"
+  }
+]

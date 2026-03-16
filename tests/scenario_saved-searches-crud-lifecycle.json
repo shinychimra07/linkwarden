@@ -1,0 +1,106 @@
+[
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\":\"Tech Bookmarks 1742094000\",\"description\":\"Search for technology bookmarks\",\"searchQuery\":\"tech\",\"sortBy\":\"createdAt\",\"sortOrder\":\"desc\"}",
+    "ResponseBody": "{\"response\":{\"id\":1,\"name\":\"Tech Bookmarks 1742094000\",\"description\":\"Search for technology bookmarks\",\"searchQuery\":\"tech\",\"collectionId\":null,\"sortBy\":\"createdAt\",\"sortOrder\":\"desc\",\"ownerId\":1,\"createdAt\":\"2026-03-16T00:00:00.000Z\",\"updatedAt\":\"2026-03-16T00:00:00.000Z\",\"collection\":null,\"tags\":[]}}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        ""
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/v1/saved-searches",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-16T05:57:15.079Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"response\":{\"id\":1,\"name\":\"Tech Bookmarks 1742094000\",\"description\":\"Search for technology bookmarks\",\"searchQuery\":\"tech\",\"collectionId\":null,\"sortBy\":\"createdAt\",\"sortOrder\":\"desc\",\"ownerId\":1,\"createdAt\":\"2026-03-16T00:00:00.000Z\",\"updatedAt\":\"2026-03-16T00:00:00.000Z\",\"collection\":null,\"tags\":[]}}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        ""
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "GET",
+    "Path": "/api/v1/saved-searches/1",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-16T05:57:27.072Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\":\"Updated Tech Bookmarks 1742094000\",\"description\":\"Updated description for tech bookmarks\",\"searchQuery\":\"technology news\",\"sortBy\":\"name\",\"sortOrder\":\"asc\"}",
+    "ResponseBody": "{\"response\":{\"id\":1,\"name\":\"Updated Tech Bookmarks 1742094000\",\"description\":\"Updated description for tech bookmarks\",\"searchQuery\":\"technology news\",\"collectionId\":null,\"sortBy\":\"name\",\"sortOrder\":\"asc\",\"ownerId\":1,\"createdAt\":\"2026-03-16T00:00:00.000Z\",\"updatedAt\":\"2026-03-16T00:00:01.000Z\",\"collection\":null,\"tags\":[]}}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        ""
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "PUT",
+    "Path": "/api/v1/saved-searches/1",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-16T05:57:36.088Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"response\":1}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        ""
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "DELETE",
+    "Path": "/api/v1/saved-searches/1",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-16T05:57:43.171Z",
+    "Scheme": "http"
+  }
+]
