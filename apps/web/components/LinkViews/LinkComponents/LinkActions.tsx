@@ -2,6 +2,7 @@ import { useState } from "react";
 import { LinkIncludingShortenedCollectionAndTags } from "@linkwarden/types";
 import usePermissions from "@/hooks/usePermissions";
 import DeleteLinkModal from "@/components/ModalContent/DeleteLinkModal";
+import ShareLinkModal from "@/components/ModalContent/ShareLinkModal";
 import { useDeleteLink, useGetLink } from "@linkwarden/router/links";
 import toast from "react-hot-toast";
 import LinkModal from "@/components/ModalContent/LinkModal";
@@ -51,6 +52,7 @@ export default function LinkActions({
 
   const [editLinkModal, setEditLinkModal] = useState(false);
   const [deleteLinkModal, setDeleteLinkModal] = useState(false);
+  const [shareLinkModal, setShareLinkModal] = useState(false);
   const [refreshPreservationsModal, setRefreshPreservationsModal] =
     useState(false);
 
@@ -115,6 +117,11 @@ export default function LinkActions({
               {t("show_link_details")}
             </DropdownMenuItem>
 
+            <DropdownMenuItem onSelect={() => setShareLinkModal(true)}>
+              <i className="bi-share" />
+              Share Link
+            </DropdownMenuItem>
+
             {(permissions === true || permissions?.canUpdate) && (
               <DropdownMenuItem onSelect={() => setEditLinkModal(true)}>
                 <i className="bi-pencil-square" />
@@ -151,6 +158,12 @@ export default function LinkActions({
             )}
           </DropdownMenuContent>
         </DropdownMenu>
+      )}
+      {shareLinkModal && (
+        <ShareLinkModal
+          onClose={() => setShareLinkModal(false)}
+          link={link}
+        />
       )}
       {editLinkModal && (
         <LinkModal
