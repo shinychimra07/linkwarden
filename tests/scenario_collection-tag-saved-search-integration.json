@@ -1,0 +1,132 @@
+[
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\": \"Tech Links 20260316\", \"description\": \"A collection of tech links\", \"color\": \"#0ea5e9\"}",
+    "ResponseBody": "{\"response\": {\"id\": 1, \"name\": \"Tech Links 20260316\", \"description\": \"A collection of tech links\", \"color\": \"#0ea5e9\", \"ownerId\": 1, \"isPublic\": false, \"createdAt\": \"2026-03-16T00:00:00.000Z\", \"updatedAt\": \"2026-03-16T00:00:00.000Z\"}}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        "next-auth.session-token=SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/v1/collections",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-16T22:40:07.011Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"tags\": [{\"label\": \"technology\"}]}",
+    "ResponseBody": "{\"response\": [{\"id\": 1, \"name\": \"technology\", \"ownerId\": 1}]}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        "next-auth.session-token=SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/v1/tags",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-16T22:40:12.957Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\": \"Tech Search 20260316\", \"description\": \"Search for tech links\", \"searchQuery\": \"technology\", \"collectionId\": 1, \"tagIds\": [1], \"sortBy\": \"createdAt\", \"sortOrder\": \"desc\"}",
+    "ResponseBody": "{\"response\": {\"id\": 1, \"name\": \"Tech Search 20260316\", \"description\": \"Search for tech links\", \"searchQuery\": \"technology\", \"collectionId\": 1, \"sortBy\": \"createdAt\", \"sortOrder\": \"desc\", \"ownerId\": 1, \"createdAt\": \"2026-03-16T00:00:00.000Z\", \"updatedAt\": \"2026-03-16T00:00:00.000Z\", \"collection\": {\"id\": 1, \"name\": \"Tech Links 20260316\", \"color\": \"#0ea5e9\"}, \"tags\": [{\"id\": 1, \"name\": \"technology\"}]}}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        "next-auth.session-token=SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/v1/saved-searches",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-16T22:40:19.957Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"response\": {\"id\": 1, \"name\": \"Tech Search 20260316\", \"description\": \"Search for tech links\", \"searchQuery\": \"technology\", \"collectionId\": 1, \"sortBy\": \"createdAt\", \"sortOrder\": \"desc\", \"ownerId\": 1, \"createdAt\": \"2026-03-16T00:00:00.000Z\", \"updatedAt\": \"2026-03-16T00:00:00.000Z\", \"collection\": {\"id\": 1, \"name\": \"Tech Links 20260316\", \"color\": \"#0ea5e9\"}, \"tags\": [{\"id\": 1, \"name\": \"technology\"}]}}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        "next-auth.session-token=SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "GET",
+    "Path": "/api/v1/saved-searches/1",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-16T22:40:25.215Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"response\": 1}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        "next-auth.session-token=SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "DELETE",
+    "Path": "/api/v1/saved-searches/1",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-16T22:40:30.212Z",
+    "Scheme": "http"
+  }
+]
