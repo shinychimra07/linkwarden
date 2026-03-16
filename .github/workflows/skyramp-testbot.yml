@@ -102,4 +102,4 @@ jobs:
           github_token: ${{ steps.app-token.outputs.token }}
           skyramp_mcp_version: next
           auth_token_command: "bash .skyramp/get_auth_token.sh"
-          server_start_command: "docker compose up -d"
+          target_setup_command: "docker compose up -d"
