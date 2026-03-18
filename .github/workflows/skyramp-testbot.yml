@@ -105,4 +105,4 @@ jobs:
           target_setup_command: "docker compose up -d"
           skyramp_mcp_source: github
           skyramp_mcp_github_token: ${{ secrets.PAT_TOKEN }}
-          skyramp_mcp_github_ref: shiny/SKYR-3638
+          skyramp_mcp_github_ref: shiny/SKYR-3639
