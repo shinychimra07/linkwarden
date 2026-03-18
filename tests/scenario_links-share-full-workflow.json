@@ -1,0 +1,106 @@
+[
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"url\": \"https://example.com/shared-bookmark-test\", \"name\": \"Shared Bookmark Test\", \"description\": \"A bookmark for testing public link sharing\", \"collectionId\": 1, \"tags\": []}",
+    "ResponseBody": "{\"response\": {\"id\": 1, \"name\": \"Shared Bookmark Test\", \"url\": \"https://example.com/shared-bookmark-test\", \"description\": \"A bookmark for testing public link sharing\", \"collectionId\": 1, \"isShared\": false, \"shareToken\": null, \"tags\": [], \"createdAt\": \"2026-03-17T00:00:00.000Z\", \"updatedAt\": \"2026-03-17T00:00:00.000Z\"}}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        ""
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/v1/links",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-17T00:42:36.326Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{}",
+    "ResponseBody": "{\"response\": {\"shareToken\": \"a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4\", \"shareUrl\": \"http://localhost:3000/public/shared/a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4\", \"isShared\": true, \"sharedAt\": \"2026-03-17T00:00:00.000Z\"}}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        ""
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/v1/links/1/share",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-17T00:42:46.824Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"response\": {\"shareToken\": \"a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4\", \"shareUrl\": \"http://localhost:3000/public/shared/a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4\", \"isShared\": true, \"sharedAt\": \"2026-03-17T00:00:00.000Z\"}}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        ""
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "GET",
+    "Path": "/api/v1/links/1/share",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-17T00:42:55.702Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"response\": {\"id\": 1, \"name\": \"Shared Bookmark Test\", \"url\": \"https://example.com/shared-bookmark-test\", \"description\": \"A bookmark for testing public link sharing\", \"type\": \"url\", \"icon\": null, \"color\": null, \"preview\": null, \"collection\": {\"id\": 1, \"name\": \"Unorganized\", \"color\": \"#000000\", \"icon\": null}, \"tags\": [], \"createdBy\": {\"id\": 1, \"name\": \"Test User\", \"username\": \"testuser\", \"image\": null}, \"sharedAt\": \"2026-03-17T00:00:00.000Z\", \"createdAt\": \"2026-03-17T00:00:00.000Z\"}}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        ""
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "GET",
+    "Path": "/api/v1/public/shared/a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-17T00:43:06.019Z",
+    "Scheme": "http"
+  }
+]
