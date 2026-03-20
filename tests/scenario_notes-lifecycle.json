@@ -1,0 +1,80 @@
+[
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"url\": \"https://example.com/notes-lifecycle-test\", \"name\": \"Notes Lifecycle Test Bookmark\", \"description\": \"Bookmark for testing full notes lifecycle\", \"type\": \"url\"}",
+    "ResponseBody": "{\"response\": {\"id\": 3, \"url\": \"https://example.com/notes-lifecycle-test\", \"name\": \"Notes Lifecycle Test Bookmark\", \"description\": \"Bookmark for testing full notes lifecycle\", \"notes\": \"\", \"type\": \"url\", \"createdById\": 1, \"collectionId\": 1, \"createdAt\": \"2026-03-20T00:00:00.000Z\", \"updatedAt\": \"2026-03-20T00:00:00.000Z\"}}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        "next-auth.session-token=SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/v1/links",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-20T18:18:44.045Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"notes\": \"Updated personal notes for this bookmark\"}",
+    "ResponseBody": "{\"response\": {\"linkId\": 3, \"notes\": \"Updated personal notes for this bookmark\", \"updatedAt\": \"2026-03-20T00:00:00.000Z\"}}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        "next-auth.session-token=SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "PUT",
+    "Path": "/api/v1/links/3/notes",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-20T18:33:45.708Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"response\": {\"linkId\": 3, \"notes\": \"Updated personal notes for this bookmark\", \"updatedAt\": \"2026-03-20T00:00:00.000Z\"}}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        "next-auth.session-token=SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "GET",
+    "Path": "/api/v1/links/3/notes",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-20T18:33:51.684Z",
+    "Scheme": "http"
+  }
+]
