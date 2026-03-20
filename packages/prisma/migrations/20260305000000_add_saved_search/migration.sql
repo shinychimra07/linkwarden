@@ -5,6 +5,7 @@ CREATE TABLE "SavedSearch" (
     "description" TEXT NOT NULL DEFAULT '',
     "searchQuery" TEXT NOT NULL DEFAULT '',
     "collectionId" INTEGER,
+    "icon" TEXT NOT NULL DEFAULT '',
     "sortBy" TEXT NOT NULL DEFAULT 'createdAt',
     "sortOrder" TEXT NOT NULL DEFAULT 'desc',
     "ownerId" INTEGER NOT NULL,

@@ -49,6 +49,7 @@ export default async function postSavedSearch(
     data: {
       name: body.name,
       description: body.description || "",
+      icon: body.icon || "",
       searchQuery: body.searchQuery || "",
       collectionId: body.collectionId || null,
       sortBy: body.sortBy || "createdAt",

@@ -303,6 +303,7 @@ model SavedSearch {
   collection   Collection? @relation(fields: [collectionId], references: [id], onDelete: SetNull)
   collectionId Int?
   tags         Tag[]
+  icon         String      @default("")
   sortBy       String      @default("createdAt")
   sortOrder    String      @default("desc")
   owner        User        @relation(fields: [ownerId], references: [id], onDelete: Cascade)

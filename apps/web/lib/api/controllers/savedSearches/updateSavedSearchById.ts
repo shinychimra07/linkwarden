@@ -68,6 +68,7 @@ export default async function updateSavedSearchById(
     data: {
       ...(body.name !== undefined && { name: body.name }),
       ...(body.description !== undefined && { description: body.description }),
+      ...(body.icon !== undefined && { icon: body.icon }),
       ...(body.searchQuery !== undefined && { searchQuery: body.searchQuery }),
       ...(body.collectionId !== undefined && {
         collectionId: body.collectionId ?? null,
