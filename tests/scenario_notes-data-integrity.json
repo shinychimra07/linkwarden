@@ -1,0 +1,54 @@
+[
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"url\": \"https://example.com/notes-integrity-test\", \"name\": \"Notes Data Integrity Bookmark\", \"description\": \"Bookmark for testing notes data integrity\", \"notes\": \"Initial notes content to verify persistence\", \"type\": \"url\"}",
+    "ResponseBody": "{\"response\": {\"id\": 2, \"url\": \"https://example.com/notes-integrity-test\", \"name\": \"Notes Data Integrity Bookmark\", \"description\": \"Bookmark for testing notes data integrity\", \"notes\": \"Initial notes content to verify persistence\", \"type\": \"url\", \"createdById\": 1, \"collectionId\": 1, \"createdAt\": \"2026-03-20T00:00:00.000Z\", \"updatedAt\": \"2026-03-20T00:00:00.000Z\"}}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        "next-auth.session-token=SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/v1/links",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-20T18:18:40.689Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"response\": {\"linkId\": 2, \"notes\": \"Initial notes content to verify persistence\", \"updatedAt\": \"2026-03-20T00:00:00.000Z\"}}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        "next-auth.session-token=SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "GET",
+    "Path": "/api/v1/links/2/notes",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-20T18:33:43.457Z",
+    "Scheme": "http"
+  }
+]

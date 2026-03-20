@@ -26,6 +26,7 @@ import CollectionSelection from "./InputSelect/CollectionSelection";
 import TagSelection from "./InputSelect/TagSelection";
 import unescapeString from "@/lib/client/unescapeString";
 import IconPopover from "./IconPopover";
+import NotesEditor from "./NotesEditor";
 import TextInput from "./TextInput";
 import usePermissions from "@/hooks/usePermissions";
 import oklchVariableToHex from "@/lib/client/oklchVariableToHex";
@@ -477,6 +478,15 @@ export default function LinkDetails({
             )}
           </div>
 
+
+          <br />
+
+          {link.id && (
+            <NotesEditor
+              linkId={link.id}
+              readOnly={mode === "view"}
+            />
+          )}
           {mode === "view" && (
             <div>
               <br />
