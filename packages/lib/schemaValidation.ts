@@ -128,6 +128,7 @@ export const PostLinkSchema = z.object({
   url: z.string().trim().max(2048).url().optional(),
   name: z.string().trim().max(2048).optional(),
   description: z.string().trim().max(2048).optional(),
+  notes: z.string().trim().max(10000).optional(),
   image: z.enum(["jpeg", "png"]).optional(),
   collection: z
     .object({
@@ -153,6 +154,7 @@ export const UpdateLinkSchema = z.object({
   name: z.string().trim().max(2048).nullish(),
   url: z.string().trim().max(2048).nullish(),
   description: z.string().trim().max(2048).nullish(),
+  notes: z.string().trim().max(10000).nullish(),
   icon: z.string().trim().max(50).nullish(),
   iconWeight: z.string().trim().max(50).nullish(),
   color: z.string().trim().max(50).nullish(),
