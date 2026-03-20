@@ -68,17 +68,24 @@ on:
       - 'Dockerfile'
       - 'docker-compose.yml'
       - 'docker-compose.yaml'
+  issue_comment:
+    types: [created]
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.head_ref }}
+  group: ${{ github.workflow }}-${{ github.event.pull_request.head.ref || github.event.issue.number || github.run_id }}
   cancel-in-progress: true
 
 jobs:
   testbot:
+    # Only run for pull_request events or issue_comment on PRs mentioning @skyramp-testbot
+    if: >-
+      github.event_name == 'pull_request' ||
+      (github.event_name == 'issue_comment' && github.event.issue.pull_request && contains(github.event.comment.body, '@skyramp-testbot'))
     runs-on: ubuntu-latest
     permissions:
       contents: write
       pull-requests: write
+      checks: write
 
     steps:
       # Generate a GitHub App installation token to retrigger CI workflows on push
@@ -95,7 +102,7 @@ jobs:
           fetch-depth: 0
           token: ${{ steps.app-token.outputs.token }}
 
-      - uses: skyramp/testbot@SKYR-3625
+      - uses: skyramp/testbot@v0.5.2
         with:
           skyramp_license_file: ${{ secrets.SKYRAMP_LICENSE_FILE }}
           anthropic_api_key: ${{ secrets.SKYRAMP_TESTBOT_API_KEY }}
