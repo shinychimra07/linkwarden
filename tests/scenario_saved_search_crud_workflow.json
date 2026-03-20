@@ -1,0 +1,106 @@
+[
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\": \"My Test Search\", \"searchQuery\": \"test query\", \"sortBy\": \"createdAt\", \"sortOrder\": \"desc\"}",
+    "ResponseBody": "{\"response\": {\"id\": 1, \"name\": \"My Test Search\", \"searchQuery\": \"test query\", \"sortBy\": \"createdAt\", \"sortOrder\": \"desc\", \"ownerId\": 1, \"collection\": null, \"tags\": []}}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        "next-auth.session-token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..fERISCLueiEiL0QD.IBxi820AA7hy1mPSvmZSyNh1nYUDGKeg1RkUo0FkFQ1bqI_IbVOj0bhGIn0Yh-8HjjgKyRByziaYItXESJprTAGvxbob8bKU4Ct2yUtGUIMSB2IZDDL42YGsn9zGNC4.VFzO0FFynW2mODTNh4uTyA"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/v1/saved-searches",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-20T18:10:55.644Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"response\": {\"id\": 1, \"name\": \"My Test Search\", \"searchQuery\": \"test query\", \"sortBy\": \"createdAt\", \"sortOrder\": \"desc\", \"ownerId\": 1, \"collection\": null, \"tags\": []}}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        "next-auth.session-token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..fERISCLueiEiL0QD.IBxi820AA7hy1mPSvmZSyNh1nYUDGKeg1RkUo0FkFQ1bqI_IbVOj0bhGIn0Yh-8HjjgKyRByziaYItXESJprTAGvxbob8bKU4Ct2yUtGUIMSB2IZDDL42YGsn9zGNC4.VFzO0FFynW2mODTNh4uTyA"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "GET",
+    "Path": "/api/v1/saved-searches/1",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-20T18:11:02.090Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\": \"Updated Search Name\", \"searchQuery\": \"updated query\"}",
+    "ResponseBody": "{\"response\": {\"id\": 1, \"name\": \"Updated Search Name\", \"searchQuery\": \"updated query\", \"sortBy\": \"createdAt\", \"sortOrder\": \"desc\", \"ownerId\": 1, \"collection\": null, \"tags\": []}}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        "next-auth.session-token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..fERISCLueiEiL0QD.IBxi820AA7hy1mPSvmZSyNh1nYUDGKeg1RkUo0FkFQ1bqI_IbVOj0bhGIn0Yh-8HjjgKyRByziaYItXESJprTAGvxbob8bKU4Ct2yUtGUIMSB2IZDDL42YGsn9zGNC4.VFzO0FFynW2mODTNh4uTyA"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "PUT",
+    "Path": "/api/v1/saved-searches/1",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-20T18:11:07.923Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"response\": 1}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        "next-auth.session-token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..fERISCLueiEiL0QD.IBxi820AA7hy1mPSvmZSyNh1nYUDGKeg1RkUo0FkFQ1bqI_IbVOj0bhGIn0Yh-8HjjgKyRByziaYItXESJprTAGvxbob8bKU4Ct2yUtGUIMSB2IZDDL42YGsn9zGNC4.VFzO0FFynW2mODTNh4uTyA"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "DELETE",
+    "Path": "/api/v1/saved-searches/1",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-20T18:11:13.017Z",
+    "Scheme": "http"
+  }
+]
