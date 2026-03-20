@@ -1,0 +1,54 @@
+[
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "[{\"id\": 1, \"name\": \"My Collection\", \"ownerId\": 1}]",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        "next-auth.session-token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..x8JrVkwluzIsjiiH.WtxCBuzWtYSVHODBgaHirVikx_v-iPKKwIDycojZZiXcyaK06OHguj1EJL4riAmLb_3tm4XlWudQmnqMwu9Ov05SNx-l7Kp6uvjZMWZDGZ7HGF7j8tBzk0jNLb39QCc.PNOQ3fSEKkM8CLzroUgDlA"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "GET",
+    "Path": "/api/v1/collections",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-20T18:15:37.693Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"canCreate\": true, \"canUpdate\": true, \"canDelete\": true}",
+    "ResponseBody": "{\"response\": \"Cannot modify your own permissions.\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        "next-auth.session-token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..x8JrVkwluzIsjiiH.WtxCBuzWtYSVHODBgaHirVikx_v-iPKKwIDycojZZiXcyaK06OHguj1EJL4riAmLb_3tm4XlWudQmnqMwu9Ov05SNx-l7Kp6uvjZMWZDGZ7HGF7j8tBzk0jNLb39QCc.PNOQ3fSEKkM8CLzroUgDlA"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "PUT",
+    "Path": "/api/v1/collections/1/members/1",
+    "QueryParams": {},
+    "StatusCode": 400,
+    "Port": 3000,
+    "Timestamp": "2026-03-20T18:16:02.478Z",
+    "Scheme": "http"
+  }
+]
