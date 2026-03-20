@@ -1,0 +1,28 @@
+[
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"response\": \"Saved search not found.\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        "next-auth.session-token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..fERISCLueiEiL0QD.IBxi820AA7hy1mPSvmZSyNh1nYUDGKeg1RkUo0FkFQ1bqI_IbVOj0bhGIn0Yh-8HjjgKyRByziaYItXESJprTAGvxbob8bKU4Ct2yUtGUIMSB2IZDDL42YGsn9zGNC4.VFzO0FFynW2mODTNh4uTyA"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "GET",
+    "Path": "/api/v1/saved-searches/99999",
+    "QueryParams": {},
+    "StatusCode": 404,
+    "Port": 3000,
+    "Timestamp": "2026-03-20T18:12:00.699Z",
+    "Scheme": "http"
+  }
+]

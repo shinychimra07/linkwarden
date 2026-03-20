@@ -1,0 +1,54 @@
+[
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\": \"Duplicate Name Test\", \"searchQuery\": \"first search\"}",
+    "ResponseBody": "{\"response\": {\"id\": 2, \"name\": \"Duplicate Name Test\", \"searchQuery\": \"first search\", \"ownerId\": 1, \"collection\": null, \"tags\": []}}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        "next-auth.session-token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..fERISCLueiEiL0QD.IBxi820AA7hy1mPSvmZSyNh1nYUDGKeg1RkUo0FkFQ1bqI_IbVOj0bhGIn0Yh-8HjjgKyRByziaYItXESJprTAGvxbob8bKU4Ct2yUtGUIMSB2IZDDL42YGsn9zGNC4.VFzO0FFynW2mODTNh4uTyA"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/v1/saved-searches",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-20T18:11:43.473Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\": \"Duplicate Name Test\", \"searchQuery\": \"second search\"}",
+    "ResponseBody": "{\"response\": \"A saved search with that name already exists.\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        "next-auth.session-token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..fERISCLueiEiL0QD.IBxi820AA7hy1mPSvmZSyNh1nYUDGKeg1RkUo0FkFQ1bqI_IbVOj0bhGIn0Yh-8HjjgKyRByziaYItXESJprTAGvxbob8bKU4Ct2yUtGUIMSB2IZDDL42YGsn9zGNC4.VFzO0FFynW2mODTNh4uTyA"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/v1/saved-searches",
+    "QueryParams": {},
+    "StatusCode": 400,
+    "Port": 3000,
+    "Timestamp": "2026-03-20T18:11:49.795Z",
+    "Scheme": "http"
+  }
+]

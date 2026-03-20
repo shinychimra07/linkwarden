@@ -66,6 +66,7 @@ model User {
   archiveAsWaybackMachine Boolean               @default(false)
   isPrivate               Boolean               @default(false)
   referredBy              String?
+  savedSearches           SavedSearch[]
   dashboardSections       DashboardSection[]
   lastPickedAt            DateTime?
   acceptPromotionalEmails Boolean               @default(false)
@@ -141,6 +142,7 @@ model Collection {
   createdById      Int?
   links            Link[]
   rssSubscriptions RssSubscription[]
+  savedSearches    SavedSearch[]
   createdAt        DateTime              @default(now())
   updatedAt        DateTime              @default(now()) @updatedAt
   DashboardSection DashboardSection[]
@@ -197,10 +199,11 @@ model Link {
 }
 
 model Tag {
-  id                      Int      @id @default(autoincrement())
+  id                      Int           @id @default(autoincrement())
   name                    String
   links                   Link[]
-  owner                   User     @relation(fields: [ownerId], references: [id], onDelete: Cascade)
+  savedSearches           SavedSearch[]
+  owner                   User          @relation(fields: [ownerId], references: [id], onDelete: Cascade)
   ownerId                 Int
   archiveAsScreenshot     Boolean?
   archiveAsMonolith       Boolean?
@@ -290,6 +293,25 @@ enum DashboardSectionType {
   RECENT_LINKS
   PINNED_LINKS
   COLLECTION
+}
+
+model SavedSearch {
+  id           Int         @id @default(autoincrement())
+  name         String
+  description  String      @default("")
+  searchQuery  String      @default("")
+  collection   Collection? @relation(fields: [collectionId], references: [id], onDelete: SetNull)
+  collectionId Int?
+  tags         Tag[]
+  icon         String      @default("")
+  sortBy       String      @default("createdAt")
+  sortOrder    String      @default("desc")
+  owner        User        @relation(fields: [ownerId], references: [id], onDelete: Cascade)
+  ownerId      Int
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @default(now()) @updatedAt
+
+  @@index([ownerId])
 }
 
 model AppMigration {
