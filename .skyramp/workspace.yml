@@ -12,7 +12,7 @@ services:
   - serviceName: linkwarden
     language: typescript
     framework: playwright
-    outputDir: tests
+    testDirectory: tests
     api:
       authType: apiKey
       authHeader: Cookie
