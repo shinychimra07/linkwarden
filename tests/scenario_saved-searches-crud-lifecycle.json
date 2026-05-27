@@ -1,0 +1,106 @@
+[
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\": \"Bookmark Search 20260316\", \"description\": \"Find all bookmarks\", \"searchQuery\": \"bookmark\", \"sortBy\": \"createdAt\", \"sortOrder\": \"desc\"}",
+    "ResponseBody": "{\"response\": {\"id\": 2, \"name\": \"Bookmark Search 20260316\", \"description\": \"Find all bookmarks\", \"searchQuery\": \"bookmark\", \"collectionId\": null, \"sortBy\": \"createdAt\", \"sortOrder\": \"desc\", \"ownerId\": 1, \"createdAt\": \"2026-03-16T00:00:00.000Z\", \"updatedAt\": \"2026-03-16T00:00:00.000Z\", \"collection\": null, \"tags\": []}}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        "next-auth.session-token=SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/v1/saved-searches",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-16T22:41:17.522Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"response\": [{\"id\": 2, \"name\": \"Bookmark Search 20260316\", \"description\": \"Find all bookmarks\", \"searchQuery\": \"bookmark\", \"collectionId\": null, \"sortBy\": \"createdAt\", \"sortOrder\": \"desc\", \"ownerId\": 1, \"createdAt\": \"2026-03-16T00:00:00.000Z\", \"updatedAt\": \"2026-03-16T00:00:00.000Z\", \"collection\": null, \"tags\": []}]}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        "next-auth.session-token=SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "GET",
+    "Path": "/api/v1/saved-searches",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-16T22:41:22.742Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\": \"Updated Bookmark Search 20260316\", \"sortOrder\": \"asc\"}",
+    "ResponseBody": "{\"response\": {\"id\": 2, \"name\": \"Updated Bookmark Search 20260316\", \"description\": \"Find all bookmarks\", \"searchQuery\": \"bookmark\", \"collectionId\": null, \"sortBy\": \"createdAt\", \"sortOrder\": \"asc\", \"ownerId\": 1, \"createdAt\": \"2026-03-16T00:00:00.000Z\", \"updatedAt\": \"2026-03-16T00:01:00.000Z\", \"collection\": null, \"tags\": []}}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        "next-auth.session-token=SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "PUT",
+    "Path": "/api/v1/saved-searches/2",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-16T22:41:27.604Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"response\": 2}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        "next-auth.session-token=SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "DELETE",
+    "Path": "/api/v1/saved-searches/2",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-16T22:41:31.883Z",
+    "Scheme": "http"
+  }
+]
