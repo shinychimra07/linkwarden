@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Link" ADD COLUMN "notes" TEXT NOT NULL DEFAULT '';
