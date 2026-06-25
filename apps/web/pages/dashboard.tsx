@@ -34,6 +34,7 @@ import { useUpdateLink } from "@linkwarden/router/links";
 import usePinLink from "@/lib/client/pinLink";
 import { useQueryClient } from "@tanstack/react-query";
 import DragNDrop from "@/components/DragNDrop";
+import WelcomeBanner from "@/components/WelcomeBanner";
 import { NextPageWithLayout } from "./_app";
 
 const Page: NextPageWithLayout = () => {
@@ -140,7 +141,7 @@ const Page: NextPageWithLayout = () => {
 
   return (
     <>
-      <div className="p-5 flex flex-col gap-4">
+      <div className="p-5 flex flex-col gap-5">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <i className="bi-house-fill text-primary" />
@@ -155,6 +156,11 @@ const Page: NextPageWithLayout = () => {
             />
           </div>
         </div>
+        <WelcomeBanner
+          userName={user?.name || undefined}
+          linkCount={numberOfLinks}
+          onAddLink={() => setNewLinkModal(true)}
+        />
         {orderedSections[0] ? (
           orderedSections?.map((section, i) => (
             <Section
@@ -179,16 +185,15 @@ const Page: NextPageWithLayout = () => {
             />
           ))
         ) : (
-          <div className="h-full flex flex-col gap-4">
+          <div className="h-full flex flex-col gap-4 animate-pulse">
             <div className="xl:flex flex flex-col sm:grid grid-cols-2 gap-4 xl:flex-row xl:justify-evenly xl:w-full">
-              <div className="skeleton h-20 w-full"></div>
-              <div className="skeleton h-20 w-full"></div>
-              <div className="skeleton h-20 w-full"></div>
-              <div className="skeleton h-20 w-full"></div>
+              <div className="skeleton h-24 w-full rounded-xl"></div>
+              <div className="skeleton h-24 w-full rounded-xl"></div>
+              <div className="skeleton h-24 w-full rounded-xl"></div>
+              <div className="skeleton h-24 w-full rounded-xl"></div>
             </div>
-            <div className="skeleton h-full"></div>
-            <div className="skeleton h-full"></div>
-            <div className="skeleton h-full"></div>
+            <div className="skeleton h-48 rounded-xl"></div>
+            <div className="skeleton h-48 rounded-xl"></div>
           </div>
         )}
       </div>
