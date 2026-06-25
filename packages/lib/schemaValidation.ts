@@ -253,6 +253,13 @@ export const PostRssSubscriptionSchema = z.object({
   collectionName: z.string().max(50).optional(),
 });
 
+export const RssImportSchema = z.object({
+  autoTag: z.boolean().optional().default(true),
+  maxItems: z.number().min(1).max(200).optional().default(50),
+});
+
+export type RssImportSchemaType = z.infer<typeof RssImportSchema>;
+
 export const PostTagSchema = z.object({
   tags: z.array(
     z.object({
@@ -313,4 +320,30 @@ export const UpdateDashboardLayoutSchema = z.array(
 
 export type UpdateDashboardLayoutSchemaType = z.infer<
   typeof UpdateDashboardLayoutSchema
+>;
+
+export const PostSavedSearchSchema = z.object({
+  name: z.string().trim().min(1).max(100),
+  description: z.string().trim().max(500).optional(),
+  searchQuery: z.string().trim().max(2048).optional(),
+  collectionId: z.number().optional(),
+  tagIds: z.array(z.number()).optional(),
+  sortBy: z.enum(["createdAt", "name", "url", "updatedAt"]).optional(),
+  sortOrder: z.enum(["asc", "desc"]).optional(),
+});
+
+export type PostSavedSearchSchemaType = z.infer<typeof PostSavedSearchSchema>;
+
+export const UpdateSavedSearchSchema = z.object({
+  name: z.string().trim().min(1).max(100).optional(),
+  description: z.string().trim().max(500).optional(),
+  searchQuery: z.string().trim().max(2048).optional(),
+  collectionId: z.number().nullish(),
+  tagIds: z.array(z.number()).optional(),
+  sortBy: z.enum(["createdAt", "name", "url", "updatedAt"]).optional(),
+  sortOrder: z.enum(["asc", "desc"]).optional(),
+});
+
+export type UpdateSavedSearchSchemaType = z.infer<
+  typeof UpdateSavedSearchSchema
 >;

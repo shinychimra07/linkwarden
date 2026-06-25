@@ -1,0 +1,28 @@
+[
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\": \"TestFeed\", \"collectionName\": \"RSS\"}",
+    "ResponseBody": "{\"response\": \"Error: Required [url]\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        "next-auth.session-token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..eidzu1EWnYXm4JBh.iX4oY4EMXbylowHL_dXgbCBUDElRdStbcqPqu_OFFPi-dCjf0MLgdK6yS_8uggjYsqCjsJTaJWA_Jhqgxohq0sLh1js-2604c07wVJB7Ov4iWj7aiz6lXnAdKIyrS68.JubSJhXbXvktLkxLWlKC0w"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/v1/rss/import",
+    "QueryParams": {},
+    "StatusCode": 400,
+    "Port": 3000,
+    "Timestamp": "2026-03-20T18:17:06.403Z",
+    "Scheme": "http"
+  }
+]

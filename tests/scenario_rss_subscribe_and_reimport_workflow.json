@@ -1,0 +1,54 @@
+[
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\": \"HN Feed\", \"url\": \"https://hnrss.org/frontpage\", \"collectionName\": \"RSS Workflow\", \"autoTag\": true, \"maxItems\": 5}",
+    "ResponseBody": "{\"response\": {\"subscription\": {\"id\": 1, \"name\": \"HN Feed\", \"url\": \"https://hnrss.org/frontpage\", \"collectionId\": 1}, \"import\": {\"imported\": 5, \"tagged\": 0, \"skippedDuplicates\": 0, \"links\": []}}}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        "next-auth.session-token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..eidzu1EWnYXm4JBh.iX4oY4EMXbylowHL_dXgbCBUDElRdStbcqPqu_OFFPi-dCjf0MLgdK6yS_8uggjYsqCjsJTaJWA_Jhqgxohq0sLh1js-2604c07wVJB7Ov4iWj7aiz6lXnAdKIyrS68.JubSJhXbXvktLkxLWlKC0w"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/v1/rss/import",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-20T18:17:37.347Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"autoTag\": true, \"maxItems\": 5}",
+    "ResponseBody": "{\"response\": {\"imported\": 0, \"tagged\": 0, \"skippedDuplicates\": 5, \"links\": []}}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        "next-auth.session-token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..eidzu1EWnYXm4JBh.iX4oY4EMXbylowHL_dXgbCBUDElRdStbcqPqu_OFFPi-dCjf0MLgdK6yS_8uggjYsqCjsJTaJWA_Jhqgxohq0sLh1js-2604c07wVJB7Ov4iWj7aiz6lXnAdKIyrS68.JubSJhXbXvktLkxLWlKC0w"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/v1/rss/1/import",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-20T18:17:43.268Z",
+    "Scheme": "http"
+  }
+]
