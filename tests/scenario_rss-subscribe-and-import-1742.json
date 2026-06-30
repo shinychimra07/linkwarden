@@ -1,0 +1,80 @@
+[
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\": \"RSS Test Collection 1742\"}",
+    "ResponseBody": "{\"response\": {\"id\": 101, \"name\": \"RSS Test Collection 1742\", \"description\": \"\", \"color\": \"#0ea5e9\", \"ownerId\": 1, \"_count\": {\"links\": 0}, \"members\": []}}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        ""
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/v1/collections",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-16T23:52:02.990Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\": \"Tech News RSS 1742\", \"url\": \"https://hnrss.org/frontpage\", \"collectionId\": 101, \"autoTag\": true, \"maxItems\": 5}",
+    "ResponseBody": "{\"response\": {\"subscription\": {\"id\": 201, \"name\": \"Tech News RSS 1742\", \"url\": \"https://hnrss.org/frontpage\", \"collectionId\": 101}, \"import\": {\"imported\": 5, \"tagged\": 3, \"skippedDuplicates\": 0, \"links\": []}}}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        ""
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/v1/rss/import",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-16T23:52:16.428Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Cookie": [
+        ""
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "DELETE",
+    "Path": "/api/v1/rss/201",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 3000,
+    "Timestamp": "2026-03-16T23:52:25.088Z",
+    "Scheme": "http"
+  }
+]
